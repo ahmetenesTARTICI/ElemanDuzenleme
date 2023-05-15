@@ -1,0 +1,22 @@
+﻿@model kipasCalisanlar.Models.Elemanlar
+@{
+    ViewData["Title"] = "Kisi_Guncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Kisi_Guncelle</h1>
+
+<form asp-action="Kisi_Guncelle" method="post">
+    <input type="hidden" asp-for="@Model.Id"/>
+     <input class="Text" asp-for="@Model.Title"/>
+    <input class="Text" asp-for="@Model.Firstname" />
+    <input class="Text" asp-for="@Model.Lastname" />
+    <input class="Text" asp-for="@Model.Birthdate" />
+    <input class="Text" asp-for="@Model.Position" />
+    <input class="Text" asp-for="@Model.Hiredate" />
+    <input class="Text" asp-for="@Model.State" />
+    <input class="Text" asp-for="@Model.Notes" />
+    <input class="Text" asp-for="@Model.Adress" />
+
+     <button class="btn btn-info" type="submit">Edit</button>
+</form>
